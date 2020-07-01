@@ -24,6 +24,7 @@ header {
 	left: 0;
 	right: 0;
 	box-shadow: 0 1px 1px black;
+	z-index: 888;
 }
 
 .header-logo{
@@ -134,7 +135,9 @@ input{
 
 input, select, option {
 	height: 35px;
+	border-radius: 0;
 }
+
 
 .cari {
 	width: 50%;
@@ -148,11 +151,12 @@ input, select, option {
 
 h3{
 	text-align: center;
-	font-size: 23px;
+	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: 2px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	padding-top: 10px;
+	text-shadow: 2px 2px 1px white;
 }
 
 .why-us .kartu{
@@ -163,7 +167,7 @@ h3{
 
 .wus-gambar {
 	width: 100%;
-	height: 100%;
+	height: 200px;
 	padding: 5px;
 	overflow: hidden;
 }
@@ -178,8 +182,12 @@ h3{
 
 .wus-caption h4{
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 20px;
 	margin-bottom: 20px;
+}
+
+.wus-caption p {
+	line-height: 20px;
 }
 
 .wus-gambar img {
@@ -187,20 +195,30 @@ h3{
 	width: 100%;
 }
 
+.most-visited {
+	background-image: url(back.svg);
+	background-position: center;
+	background-size: cover;
+}
+
 .sampul-mv{
-	margin-top: 70px;
+	margin-top: 50px;
+}
+
+.sampul-mv h3{
+	line-height: 100px; 
 }
 
 .mvkiri, .mvkanan{
 	width: 100%;
 	height: 300px;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
 .kotak-mv {
 	width: 60%;
 	height: 100%;
-	background-color:#6159e5;
+	background-color:#142850;
 	float: left;
 	border-radius: 5px;
 	box-shadow: 2px 2px 1px black;
@@ -211,20 +229,24 @@ h3{
 }
 
 .kotak-judul {
-	width: 10%;
+	width: 20%;
 	height: 50px;
 	float: left;
 	margin : 125px 0; 
 	line-height: 50px;
 	text-align: center;
-	background-color: #6159e5;
+	background-color: #142850;
 	color: white;
-	box-shadow: 2px 2px 2px black;
-
+	border-radius: 0 5px 5px 0;
 }
 
 .mvkanan .kotak-judul {
-	box-shadow: 0 2px 0px black;
+	border-radius: 5px 0 0 5px; 
+}
+
+.kotak-judul a {
+	text-decoration: none;
+	color: white;
 }
 
 .mvkanan .kotak-judul {
@@ -241,18 +263,38 @@ h3{
 	width: 100%;
 	height: 100%;
 	padding: 5px;
+	position: relative;
 }
 
 .gambar-mv img {
 	width: 100%;
 	height: 100%;
+	opacity: 0.6;
 }
 
+.gambar-mv .kedua {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%
+	margin: 0 auto;
+	border-radius: 5px;
+	padding: 5px;
+	opacity: 0;
+	transition: 1s;
+}
+
+.gambar-mv a:hover img {
+	opacity: 1;
+}
+
+
+
 .footer {
-	height: 300px;
-	background-color: #142850;
+	height: 250px;
+	background-color: #444053;
 	color: white;
-	margin-top: 50px;
+	margin-top: 100px;
 }
 
 .footer-logo{
