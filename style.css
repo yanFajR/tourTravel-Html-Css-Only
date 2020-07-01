@@ -218,10 +218,10 @@ h3{
 .kotak-mv {
 	width: 60%;
 	height: 100%;
-	background-color:#142850;
+	background-color:grey;
 	float: left;
 	border-radius: 5px;
-	box-shadow: 2px 2px 1px black;
+	box-shadow: 1px 1px 1px black;
 }
 
 .mvkanan .kotak-mv {
@@ -235,7 +235,7 @@ h3{
 	margin : 125px 0; 
 	line-height: 50px;
 	text-align: center;
-	background-color: #142850;
+	background-color: grey;
 	color: white;
 	border-radius: 0 5px 5px 0;
 }
